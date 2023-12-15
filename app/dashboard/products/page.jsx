@@ -47,7 +47,7 @@ const ProductsPage = () => {
       </thead>
       <tbody>
       {data.map((product)=>(
-        <tr>
+        <tr key={product}>
         <td><div className='flex items-center gap-2'>{product.title}</div></td>
         <td>{product.desc}</td>
         <td>{product.price}</td>
