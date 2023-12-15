@@ -50,8 +50,8 @@ import {
       <div className="">
       <ul className='w-full h-full flex justify-between flex-col'>
         {
-            menuItems.map(({title,path,icon})=>(
-                <li className='w-full h-auto p-5 hover:bg-purple-600 hover:rounded-md '>
+            menuItems.map(({title,path,icon},index)=>(
+                <li key={index} className='w-full h-auto p-5 hover:bg-purple-600 hover:rounded-md '>
                 <Link href={path} className='flex items-center space-x-2'>
                 <div>{icon}</div>
                 <h1>{title}</h1>
