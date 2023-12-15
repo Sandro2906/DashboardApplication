@@ -46,8 +46,8 @@ const ProductsPage = () => {
         </tr>
       </thead>
       <tbody>
-      {data.map((product)=>(
-        <tr key={product}>
+      {data.map((product, index)=>(
+        <tr key={index}>
         <td><div className='flex items-center gap-2'>{product.title}</div></td>
         <td>{product.desc}</td>
         <td>{product.price}</td>
